@@ -19,6 +19,13 @@
             {
                 "language": "xml",
                 "path": "./snippets/xml.json"
+            },
+            {
+                "language": [
+                  "python",
+                  "xml"
+                ],
+                "path": "./snippets/aaron.code-snippets.json"
             }
         ]
     },
