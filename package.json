@@ -1,34 +1,31 @@
 {
-    "name": "odoo-snippets",
-    "displayName": "Odoo Snippets",
-    "description": "Code Snippets for Odoo using new api, support Python, XML.",
-    "version": "0.7.1",
-    "publisher": "jeffery9",
-    "engines": {
-        "vscode": "^1.0.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "python",
-                "path": "./snippets/python.json"
-            },
-            {
-                "language": "xml",
-                "path": "./snippets/xml.json"
-            },
-            {
-                "language": [
-                  "python",
-                  "xml"
-                ],
-                "path": "./snippets/aaron.code-snippets.json"
-            }
-        ]
-    },
-    "icon": "images/odoo_logo.png",
-    "repository": "https://github.com/jeffery9/vscode-odoo-snippets"
+  "name": "odoo-snippets",
+  "displayName": "Odoo Snippets",
+  "description": "Code Snippets for Odoo using new api, support Python, XML.",
+  "version": "0.7.1",
+  "publisher": "jeffery9",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml.json"
+      },
+      {
+        "language": "csv",
+        "path": "./snippets/csv.json"
+      }
+    ]
+  },
+  "icon": "images/odoo_logo.png",
+  "repository": "https://github.com/jeffery9/vscode-odoo-snippets"
 }

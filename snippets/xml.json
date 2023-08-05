@@ -13,8 +13,7 @@
       "\t\t<div class=\"oe_title\">",
       "\t\t\t<label for=\"${5:name}\" class=\"oe_edit_only\"/>",
       "\t\t\t<h1><field name=\"${5}\" placeholder=\"${7:Describe the item...}\"/></h1>",
-      "\t\t</div>",
-      "\t\t${0}",
+      "\t\t</div>${0}",
       "\t</sheet>",
       "</form>"
     ],
@@ -44,7 +43,11 @@
     "prefix": "oo_arch/pivot"
   },
   "arch/search": {
-    "body": ["<search string=\"${1:Name}\">", "\t${0}", "</search>"],
+    "body": [
+      "<search string=\"${1:Name}\">",
+      "\t${0}",
+      "</search>"
+    ],
     "description": "Common search tag to be added inside a ir.ui.view",
     "prefix": "oo_arch/search"
   },
@@ -79,12 +82,16 @@
     "prefix": "oo_attribute/domain"
   },
   "attribute/invisible": {
-    "body": ["<attribute name=\"invisible\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"invisible\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/invisible"
   },
   "attribute/invisible1": {
-    "body": ["<attribute name=\"invisible\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"invisible\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/invisible"
   },
@@ -103,22 +110,30 @@
     "prefix": "oo_attribute/options"
   },
   "attribute/readonly": {
-    "body": ["<attribute name=\"readonly\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"readonly\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/readonly"
   },
   "attribute/readonly1": {
-    "body": ["<attribute name=\"readonly\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"readonly\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/readonly"
   },
   "attribute/required": {
-    "body": ["<attribute name=\"required\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"required\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/required"
   },
   "attribute/required1": {
-    "body": ["<attribute name=\"required\">${1:True}</attribute>${0}"],
+    "body": [
+      "<attribute name=\"required\">${1:True}</attribute>${0}"
+    ],
     "description": "",
     "prefix": "oo_attribute/required"
   },
@@ -130,27 +145,37 @@
     "prefix": "oo_attribute"
   },
   "attrs": {
-    "body": ["attrs=\"{ ${0} }\""],
+    "body": [
+      "attrs=\"{ ${0} }\""
+    ],
     "description": "field attr attrs",
     "prefix": "oo_attrs"
   },
   "attrs/invisible": {
-    "body": ["'column_invisible': [('state','not in',('draft'))] ${0}"],
+    "body": [
+      "'column_invisible': [('state','not in',('draft'))] ${0}"
+    ],
     "description": "field attr attrs column_invisible",
     "prefix": "oo_attrs/invisible"
   },
   "attrs/invisible1": {
-    "body": ["'invisible': [('state','not in',('draft'))] ${0}"],
+    "body": [
+      "'invisible': [('state','not in',('draft'))] ${0}"
+    ],
     "description": "field attr attrs invisible",
     "prefix": "oo_attrs/invisible"
   },
   "attrs/readonly": {
-    "body": ["'readonly': [('state','not in',('draft'))] ${0}"],
+    "body": [
+      "'readonly': [('state','not in',('draft'))] ${0}"
+    ],
     "description": "field attr attrs readonly",
     "prefix": "oo_attrs/readonly"
   },
   "attrs/required": {
-    "body": ["'required': [('state','not in',('draft'))] ${0}"],
+    "body": [
+      "'required': [('state','not in',('draft'))] ${0}"
+    ],
     "description": "field attr attrs required",
     "prefix": "oo_attrs/required"
   },
@@ -194,97 +219,135 @@
     "prefix": "oo_chatter"
   },
   "class/oe_edit_only": {
-    "body": ["class=\"oe_edit_only\"${0}"],
+    "body": [
+      "class=\"oe_edit_only\"${0}"
+    ],
     "description": "field attr class oe_edit_only",
     "prefix": "oo_class/oe_edit_only"
   },
   "class/oe_inline": {
-    "body": ["class=\"oe_inline\"${0}"],
+    "body": [
+      "class=\"oe_inline\"${0}"
+    ],
     "description": "field attr class oe_inline",
     "prefix": "oo_class/oe_inline"
   },
   "class/oe_left": {
-    "body": ["class=\"oe_left\"${0}"],
+    "body": [
+      "class=\"oe_left\"${0}"
+    ],
     "description": "field attr class oe_left",
     "prefix": "oo_class/oe_left"
   },
   "class/oe_no_avatar": {
-    "body": ["class=\"oe_no_avatar\"${0}"],
+    "body": [
+      "class=\"oe_no_avatar\"${0}"
+    ],
     "description": "field attr class oe_no_avatar",
     "prefix": "oo_class/oe_no_avatar"
   },
   "class/oe_no_button": {
-    "body": ["class=\"oe_no_button\"${0}"],
+    "body": [
+      "class=\"oe_no_button\"${0}"
+    ],
     "description": "field attr class oe_no_button",
     "prefix": "oo_class/oe_no_button"
   },
   "class/oe_read_only": {
-    "body": ["class=\"oe_read_only\"${0}"],
+    "body": [
+      "class=\"oe_read_only\"${0}"
+    ],
     "description": "field attr class oe_read_only",
     "prefix": "oo_class/oe_read_only"
   },
   "class/oe_right": {
-    "body": ["class=\"oe_right\"${0}"],
+    "body": [
+      "class=\"oe_right\"${0}"
+    ],
     "description": "field attr class oe_right",
     "prefix": "oo_class/oe_right"
   },
   "context1": {
-    "body": ["context=\"{'${1:key}': ${2:value}, ${0}}\""],
+    "body": [
+      "context=\"{'${1:key}': ${2:value}, ${0}}\""
+    ],
     "description": "tag attr context",
     "prefix": "oo_context"
   },
   "create": {
-    "body": ["create=\"${1:false}\"${0}"],
+    "body": [
+      "create=\"${1:false}\"${0}"
+    ],
     "description": "tag attr create",
     "prefix": "oo_create"
   },
   "decoration": {
-    "body": ["decoration-${1:info}=\"${2:field} == ${3:value}\"${0}"],
+    "body": [
+      "decoration-${1:info}=\"${2:field} == ${3:value}\"${0}"
+    ],
     "description": "field attr decoration",
     "prefix": "oo_decoration"
   },
   "default_order": {
-    "body": ["default_order=\"${1:field},${0}\""],
+    "body": [
+      "default_order=\"${1:field},${0}\""
+    ],
     "description": "field attr default_order",
     "prefix": "oo_default_order"
   },
   "delete": {
-    "body": ["delete=\"${1:false}\"${0}"],
+    "body": [
+      "delete=\"${1:false}\"${0}"
+    ],
     "description": "tag attr delete",
     "prefix": "oo_delete"
   },
   "domain2": {
-    "body": ["domain=\"[('${1:name}', '=', ${1})]\""],
+    "body": [
+      "domain=\"[('${1:name}', '=', ${1})]\""
+    ],
     "description": "field attr domain",
     "prefix": "oo_domain"
   },
   "duplicate": {
-    "body": ["duplicate=\"${1:false}\"${0}"],
+    "body": [
+      "duplicate=\"${1:false}\"${0}"
+    ],
     "description": "tag attr duplicate",
     "prefix": "oo_duplicate"
   },
   "edit": {
-    "body": ["edit=\"${1:false}\"${0}"],
+    "body": [
+      "edit=\"${1:false}\"${0}"
+    ],
     "description": "tag attr edit",
     "prefix": "oo_edit"
   },
   "extid/group_no_one": {
-    "body": ["base.group_no_one${0}"],
+    "body": [
+      "base.group_no_one${0}"
+    ],
     "description": "",
     "prefix": "oo_extid/group_no_one"
   },
   "extid/group_system": {
-    "body": ["base.group_system${0}"],
+    "body": [
+      "base.group_system${0}"
+    ],
     "description": "",
     "prefix": "oo_extid/group_system"
   },
   "field/boolean": {
-    "body": ["<field name=\"${1:name}\" eval=\"${2:True}\"/>${0}"],
+    "body": [
+      "<field name=\"${1:name}\" eval=\"${2:True}\"/>${0}"
+    ],
     "description": "Common XML tag for field type Boolean",
     "prefix": "oo_field/boolean"
   },
   "field/char": {
-    "body": ["<field name=\"${1:name}\">${2:value}</field>${0}"],
+    "body": [
+      "<field name=\"${1:name}\">${2:value}</field>${0}"
+    ],
     "description": "Common XML tag for field type Char",
     "prefix": "oo_field/char"
   },
@@ -314,7 +377,9 @@
     "prefix": "oo_field/datetime"
   },
   "field/float": {
-    "body": ["<field name=\"${1:name}\" eval=\"${2:0.0}\"/>${0}"],
+    "body": [
+      "<field name=\"${1:name}\" eval=\"${2:0.0}\"/>${0}"
+    ],
     "description": "Common XML tag for field type Float",
     "prefix": "oo_field/float"
   },
@@ -358,7 +423,9 @@
     "prefix": "oo_field/inline"
   },
   "field/integer": {
-    "body": ["<field name=\"${1:name}\" eval=\"${2:0}\"/>${0}"],
+    "body": [
+      "<field name=\"${1:name}\" eval=\"${2:0}\"/>${0}"
+    ],
     "description": "Common XML tag for field type Integer",
     "prefix": "oo_field/integer"
   },
@@ -370,7 +437,9 @@
     "prefix": "oo_field/many2many"
   },
   "field/many2one": {
-    "body": ["<field name=\"${1:name}\" ref=\"${2:ir.model}\"/>${0}"],
+    "body": [
+      "<field name=\"${1:name}\" ref=\"${2:ir.model}\"/>${0}"
+    ],
     "description": "Common XML tag for field type Many2one",
     "prefix": "oo_field/many2one"
   },
@@ -382,12 +451,16 @@
     "prefix": "oo_field/one2many"
   },
   "field/selection": {
-    "body": ["<field name=\"${1:name}\">${2:value}</field>${0}"],
+    "body": [
+      "<field name=\"${1:name}\">${2:value}</field>${0}"
+    ],
     "description": "Common XML tag for field type Selection",
     "prefix": "oo_field/selection"
   },
   "field/simple": {
-    "body": ["<field name=\"${1:field_name}\"/>${0}"],
+    "body": [
+      "<field name=\"${1:field_name}\"/>${0}"
+    ],
     "description": "Simple field tag",
     "prefix": "oo_field/simple"
   },
@@ -472,11 +545,9 @@
   },
   "file/xml": {
     "body": [
-      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "<odoo>",
-      "\t<data noupdate=\"${1:0}\">",
-      "\t\t${0}",
-      "\t</data>",
+      "\t${0}",
       "</odoo>"
     ],
     "description": "Common base XML structure to be used in Odoo module data files",
@@ -484,8 +555,7 @@
   },
   "filter/archive": {
     "body": [
-      "<filter string=\"\u5f52\u6863\" name=\"inactive\" domain=\"[('active','=',False)]\"/>",
-      "${0}"
+      "<filter string=\"\u5f52\u6863\" name=\"inactive\" domain=\"[('active','=',False)]\"/>${0}"
     ],
     "description": "Filter archived",
     "prefix": "oo_filter/archive"
@@ -500,13 +570,15 @@
     "prefix": "oo_filter/latest_by_day"
   },
   "filter_domain": {
-    "body": ["filter_domain=\"[('${1:name}', '=', ${1})]\""],
+    "body": [
+      "filter_domain=\"[('${1:name}', '=', ${1})]\""
+    ],
     "description": "field attr filter_domain",
     "prefix": "oo_filter_domain"
   },
   "function": {
     "body": [
-      "<function eval=\"[(${3:field}, '=', ${4:value})]\" model=\"${1:model.name}\"  name=\"${2:mothod}\">",
+      "<function eval=\"[(${3:field}, '=', ${4:value})]\" model=\"${1:model.name}\"  name=\"${2:method}\">",
       "\t<function eval=\"[(${3:field}, '=', ${4:value})]\" model=\"${1:model.name}\"  name=\"search\">",
       "\t<value eval=\"{'${3:field}': ${4:value}}\"/>",
       "</function>"
@@ -515,62 +587,86 @@
     "prefix": "oo_function"
   },
   "group_display_incoterm": {
-    "body": [" groups=\"sale_stock.group_display_incoterm\"${0}"],
+    "body": [
+      " groups=\"sale_stock.group_display_incoterm\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_display_incoterm"
   },
   "group_multi_company": {
-    "body": [" groups=\"base.group_multi_company\"${0}"],
+    "body": [
+      " groups=\"base.group_multi_company\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_multi_company"
   },
   "group_no_one": {
-    "body": [" groups=\"base.group_no_one\"${0}"],
+    "body": [
+      " groups=\"base.group_no_one\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_no_one"
   },
   "group_production_lot": {
-    "body": [" groups=\"stock.group_production_lot\"${0}"],
+    "body": [
+      " groups=\"stock.group_production_lot\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_production_lot"
   },
   "group_stock_multi_locations": {
-    "body": [" groups=\"stock.group_stock_multi_locations\"${0}"],
+    "body": [
+      " groups=\"stock.group_stock_multi_locations\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_stock_multi_locations"
   },
   "group_system": {
-    "body": [" groups=\"base.group_system\"${0}"],
+    "body": [
+      " groups=\"base.group_system\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_system"
   },
   "group_tracking_lot": {
-    "body": [" groups=\"stock.group_tracking_lot\"${0}"],
+    "body": [
+      " groups=\"stock.group_tracking_lot\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_tracking_lot"
   },
   "group_tracking_owner": {
-    "body": [" groups=\"stock.group_tracking_owner\"${0}"],
+    "body": [
+      " groups=\"stock.group_tracking_owner\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_tracking_owner"
   },
   "group_uom": {
-    "body": [" groups=\"uom.group_uom\"${0}"],
+    "body": [
+      " groups=\"uom.group_uom\"${0}"
+    ],
     "description": "",
     "prefix": "oo_group_uom"
   },
   "groups": {
-    "body": ["groups=\"${1}\"${0}"],
+    "body": [
+      "groups=\"${1}\"${0}"
+    ],
     "description": "",
     "prefix": "oo_groups"
   },
   "groups1": {
-    "body": ["groups=\"${1:MODULE}.group_${2:GROUPNMAE}\"${0}"],
+    "body": [
+      "groups=\"${1:MODULE}.group_${2:GROUPNMAE}\"${0}"
+    ],
     "description": "field attr groups",
     "prefix": "oo_groups"
   },
   "invisible": {
-    "body": ["invisible=\"${1:1}\"${0}"],
+    "body": [
+      "invisible=\"${1:1}\"${0}"
+    ],
     "description": "field attr invisible",
     "prefix": "oo_invisible"
   },
@@ -584,12 +680,21 @@
     "prefix": "oo_layout/button_box"
   },
   "layout/group": {
-    "body": ["<group>", "\t\t${0}", "\t", "", "</group>", ""],
+    "body": [
+      "<group>",
+      "\t\t${0}",
+      "\t",
+      "",
+      "</group>",
+      ""
+    ],
     "description": "",
     "prefix": "oo_layout/group"
   },
   "layout/label": {
-    "body": ["<label for='${1:field_name}'>${2:Label}</label>"],
+    "body": [
+      "<label for='${1:field_name}'>${2:Label}</label>"
+    ],
     "description": "Field Label",
     "prefix": "oo_layout/label"
   },
@@ -609,32 +714,48 @@
     "prefix": "oo_link"
   },
   "notebook": {
-    "body": ["<notebook>", "\t${0}", "</notebook>"],
+    "body": [
+      "<notebook>",
+      "\t${0}",
+      "</notebook>"
+    ],
     "description": "",
     "prefix": "oo_notebook"
   },
   "notebook/page": {
-    "body": ["<page string=\"${1:Title}\" >", "\t${0}", "</page>"],
+    "body": [
+      "<page string=\"${1:Title}\" >",
+      "\t${0}",
+      "</page>"
+    ],
     "description": "",
     "prefix": "oo_notebook/page"
   },
   "options/always_reload": {
-    "body": ["options=\"{'always_reload': True}\"${0}"],
+    "body": [
+      "options=\"{'always_reload': True}\"${0}"
+    ],
     "description": "field attr options always_reload",
     "prefix": "oo_options/always_reload"
   },
   "options/no_create": {
-    "body": ["options=\"{'no_create': True}\"${0}"],
+    "body": [
+      "options=\"{'no_create': True}\"${0}"
+    ],
     "description": "field attr options no_create",
     "prefix": "oo_options/no_create"
   },
   "options/no_create_edit": {
-    "body": ["options=\"{'no_create_edit': True}\"${0}"],
+    "body": [
+      "options=\"{'no_create_edit': True}\"${0}"
+    ],
     "description": "field attr options no_create_edit",
     "prefix": "oo_options/no_create_edit"
   },
   "options/no_open": {
-    "body": ["options=\"{ 'no_open': True}\"${0}"],
+    "body": [
+      "options=\"{ 'no_open': True}\"${0}"
+    ],
     "description": "field attr options no_open",
     "prefix": "oo_options/no_open"
   },
@@ -646,57 +767,81 @@
     "prefix": "oo_options/no_quick_create"
   },
   "options/reload_whole_on_button": {
-    "body": ["options=\"{'reload_whole_on_button': true}\"${0}"],
+    "body": [
+      "options=\"{'reload_whole_on_button': true}\"${0}"
+    ],
     "description": "field attr options reload_whole_on_button",
     "prefix": "oo_options/reload_whole_on_button"
   },
   "position/after": {
-    "body": ["position=\"${1:after}\"${0}"],
+    "body": [
+      "position=\"${1:after}\"${0}"
+    ],
     "description": "xpath position/after",
     "prefix": "oo_position/after"
   },
   "position/attributes": {
-    "body": ["position=\"${1:attributes}\"${0}"],
+    "body": [
+      "position=\"${1:attributes}\"${0}"
+    ],
     "description": "xpath position/attributes",
     "prefix": "oo_position/attributes"
   },
   "position/before": {
-    "body": ["position=\"${1:before}\"${0}"],
+    "body": [
+      "position=\"${1:before}\"${0}"
+    ],
     "description": "xpath position/before",
     "prefix": "oo_position/before"
   },
   "position/inside": {
-    "body": ["position=\"${1:inside}\"${0}"],
+    "body": [
+      "position=\"${1:inside}\"${0}"
+    ],
     "description": "xpath position/inside",
     "prefix": "oo_position/inside"
   },
   "qweb_t-att": {
-    "body": ["t-att-${1:name}=\"${2:value}\""],
+    "body": [
+      "t-att-${1:name}=\"${2:value}\""
+    ],
     "description": "Qweb named attribute",
     "prefix": "oo_qweb_t-att"
   },
   "qweb_t-att1": {
-    "body": ["t-att=\"${1:dict_of_pair}\""],
+    "body": [
+      "t-att=\"${1:dict_of_pair}\""
+    ],
     "description": "Qweb attribute",
     "prefix": "oo_qweb_t-att"
   },
   "qweb_t-attf": {
-    "body": ["t-attf-${1:name}=\"${2:format_string}\""],
+    "body": [
+      "t-attf-${1:name}=\"${2:format_string}\""
+    ],
     "description": "Qweb format string attribute",
     "prefix": "oo_qweb_t-attf"
   },
   "qweb_t-call": {
-    "body": ["<t t-call=\"${1:template}\"/>${0}"],
+    "body": [
+      "<t t-call=\"${1:template}\"/>${0}"
+    ],
     "description": "Qweb inline call template",
     "prefix": "oo_qweb_t-call"
   },
   "qweb_t-call1": {
-    "body": ["<t t-call=\"${1:template}\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"${1:template}\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Qweb call template",
     "prefix": "oo_qweb_t-call"
   },
   "qweb_t-esc": {
-    "body": ["<t t-esc=\"${1:value}\"/>"],
+    "body": [
+      "<t t-esc=\"${1:value}\"/>"
+    ],
     "description": "Qweb data output",
     "prefix": "oo_qweb_t-esc"
   },
@@ -712,7 +857,9 @@
     "prefix": "oo_qweb_t-extend"
   },
   "qweb_t-field": {
-    "body": ["<${1:span} t-field=\"${2:o}.${3:name}\"/>${0}"],
+    "body": [
+      "<${1:span} t-field=\"${2:o}.${3:name}\"/>${0}"
+    ],
     "description": "Qweb field access",
     "prefix": "oo_qweb_t-field"
   },
@@ -726,12 +873,18 @@
     "prefix": "oo_qweb_t-foreach"
   },
   "qweb_t-if": {
-    "body": ["<${1:tag} t-if=\"${2:condition}\">${3:value}</${1}>${0}"],
+    "body": [
+      "<${1:tag} t-if=\"${2:condition}\">${3:value}</${1}>${0}"
+    ],
     "description": "Qweb inline conditional",
     "prefix": "oo_qweb_t-if"
   },
   "qweb_t-if1": {
-    "body": ["<t t-if=\"${1:codition}\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-if=\"${1:codition}\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Qweb conditional",
     "prefix": "oo_qweb_t-if"
   },
@@ -745,7 +898,9 @@
     "prefix": "oo_qweb_t-js"
   },
   "qweb_t-log": {
-    "body": ["<t t-log=\"${1:value}\"/>${0}"],
+    "body": [
+      "<t t-log=\"${1:value}\"/>${0}"
+    ],
     "description": "Qweb logging",
     "prefix": "oo_qweb_t-log"
   },
@@ -759,22 +914,32 @@
     "prefix": "oo_qweb_t-name"
   },
   "qweb_t-raw": {
-    "body": ["<t t-raw=\"0\"/>"],
+    "body": [
+      "<t t-raw=\"0\"/>"
+    ],
     "description": "Qweb template from context",
     "prefix": "oo_qweb_t-raw"
   },
   "qweb_t-set": {
-    "body": ["<t t-set=\"${1:name}\" t-value=\"${2:value}\"/>${0}"],
+    "body": [
+      "<t t-set=\"${1:name}\" t-value=\"${2:value}\"/>${0}"
+    ],
     "description": "Qweb inline variable",
     "prefix": "oo_qweb_t-set"
   },
   "qweb_t-set1": {
-    "body": ["<t t-set=\"${1:name}\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-set=\"${1:name}\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Qweb variable",
     "prefix": "oo_qweb_t-set"
   },
   "readonly1": {
-    "body": ["readonly=\"${1:1}\"${0}"],
+    "body": [
+      "readonly=\"${1:1}\"${0}"
+    ],
     "description": "field attr readonly",
     "prefix": "oo_readonly"
   },
@@ -1107,7 +1272,7 @@
       "\t<field name=\"perm_create\" eval=\"${6:True}\"/>",
       "\t<field name=\"perm_write\" eval=\"${7:True}\"/>",
       "\t<field name=\"perm_unlink\" eval=\"${8:True}\"/>",
-      "\t<field name=\"domain_force\">${9:['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]}</field>",
+      "\t<field name=\"domain_force\">[${9}]</field>",
       "\t<field name=\"active\" eval=\"${10:True}\"/>",
       "</record>${0}"
     ],
@@ -1203,14 +1368,9 @@
   },
   "record/view": {
     "body": [
-      "<record id=\"view_${2/[^a-z]+/\\_/g}_${3}\" model=\"ir.ui.view\">",
-      "\t<field name=\"name\">${1:Human readable name}</field>",
-      "\t<field name=\"model\">${2:model.name}</field>",
-      "\t<field name=\"type\">${3:tree}</field>",
-      "\t<field name=\"mode\">${4:primary}</field>",
-      "\t<field name=\"priority\" eval=\"${5:16}\"/>",
-      "\t<field name=\"active\" eval=\"${6:True}\"/>${8:",
-      "\t<field name=\"inherit_id\" ref=\"${7:xml_id}\"/>}",
+      "<record id=\"${1:model_name}_${2:tree}\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.${2:tree}</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
       "\t<field name=\"arch\" type=\"xml\">",
       "\t\t${0}",
       "\t</field>",
@@ -1219,8 +1379,27 @@
     "description": "Common ir.ui.view record definition",
     "prefix": "oo_record/view"
   },
+  "record/view_detailed": {
+    "body": [
+      "<record id=\"${1:model_name}_${2:tree}\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:model_name}.${2:tree}</field>",
+      "\t<field name=\"model\">${1:model_name}</field>",
+      "\t<field name=\"mode\">${3:primary}</field>",
+      "\t<field name=\"priority\" eval=\"${4:16}\"/>",
+      "\t<field name=\"active\" eval=\"${5:true}\"/>",
+      "\t<field name=\"inherit_id\" ref=\"${6:xml_id}\"/>}",
+      "\t<field name=\"arch\" type=\"xml\">",
+      "\t\t${0}",
+      "\t</field>",
+      "</record>"
+    ],
+    "description": "common ir.ui.view record definition",
+    "prefix": "oo_record/view_detailed"
+  },
   "ref": {
-    "body": ["ref=\"${1:module.external_id}\"${0}"],
+    "body": [
+      "ref=\"${1:module.external_id}\"${0}"
+    ],
     "description": "field attr ref",
     "prefix": "oo_ref"
   },
@@ -1318,7 +1497,11 @@
     "prefix": "oo_report_fullreport"
   },
   "report_layout": {
-    "body": ["<t t-call=\"report.external_layout\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.external_layout\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report external_layout",
     "prefix": "oo_report_layout"
   },
@@ -1341,27 +1524,47 @@
     "prefix": "oo_report_layout"
   },
   "report_layout3": {
-    "body": ["<t t-call=\"report.html_container\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.html_container\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report html_container",
     "prefix": "oo_report_layout"
   },
   "report_layout4": {
-    "body": ["<t t-call=\"report.internal_layout\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.internal_layout\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report internal_layout",
     "prefix": "oo_report_layout"
   },
   "report_layout5": {
-    "body": ["<t t-call=\"report.layout\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.layout\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report layout",
     "prefix": "oo_report_layout"
   },
   "report_layout6": {
-    "body": ["<t t-call=\"report.minimal_layout\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.minimal_layout\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report minimal_layout",
     "prefix": "oo_report_layout"
   },
   "report_layout7": {
-    "body": ["<t t-call=\"report.style\">", "\t${0}", "</t>"],
+    "body": [
+      "<t t-call=\"report.style\">",
+      "\t${0}",
+      "</t>"
+    ],
     "description": "Report style",
     "prefix": "oo_report_layout"
   },
@@ -1391,7 +1594,9 @@
     "prefix": "oo_report_t-raw"
   },
   "required1": {
-    "body": ["required=\"${1:1}\"${0}"],
+    "body": [
+      "required=\"${1:1}\"${0}"
+    ],
     "description": "field attr required",
     "prefix": "oo_required"
   },
@@ -1459,7 +1664,9 @@
     "prefix": "oo_time/relativetime"
   },
   "time/strftime": {
-    "body": ["strftime('${1:%Y-%m-%d}${2: }${3:%H:%M:%S}')${0}"],
+    "body": [
+      "strftime('${1:%Y-%m-%d}${2: }${3:%H:%M:%S}')${0}"
+    ],
     "description": "Fully formated strftime",
     "prefix": "oo_time/strftime"
   },
@@ -1629,111 +1836,141 @@
     "description": "Inherited Views: tree, form, search",
     "prefix": "oo_view/inherit"
   },
-  "view/inherit1": {
+  "view/inherit_view": {
     "body": [
-      "<!-- VIEWS: \"${1:Human readable name}\"",
-      "\t- Model\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7: ${2:model}",
-      "\t- Base Addons\u00b7\u00b7\u00b7: ${3:base}\t",
-      "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
-      "<!-- Tree view for \"${2/(.)/${1:/downcase}/g}\" -->",
-      "<record id=\"view_${2/\\./\\_/g}_tree\" model=\"ir.ui.view\">",
-      "\t<field name=\"name\">view.${2/\\.+/\\./g}.tree</field>",
-      "\t<field name=\"model\">${2/\\.+/\\./g}</field>",
-      "\t<field name=\"inherit_id\" ref=\"${3}.view_${2/\\./\\_/g}_tree\"/>",
-      "\t<field name=\"arch\" type=\"xml\">",
-      "\t\t${0}",
-      "\t</field>",
-      "</record>",
-      "<!-- Form view for \"${2/(.)/${1:/downcase}/g}\" -->",
-      "<record id=\"view_${2/\\./\\_/g}_form\" model=\"ir.ui.view\">",
-      "\t<field name=\"name\">view.${2/\\.+/\\./g}.form</field>",
-      "\t<field name=\"model\">${2/\\.+/\\./g}</field>",
-      "\t <field name=\"inherit_id\" ref=\"${3}.view_${2/\\./\\_/g}_form\"/>",
+      "<record id=\"${1:base_id}\" model=\"ir.ui.view\">",
+      "\t<field name=\"name\">${1:base}.inherit${2}</field>",
+      "\t<field name=\"model\">${3:model_name}</field>",
+      "\t<field name=\"inherit_id\" ref=\"${4:model}.${1:base_id}\"/>",
       "\t<field name=\"arch\" type=\"xml\">",
       "\t\t${0}",
       "\t</field>",
       "</record>"
     ],
-    "description": "Inherited Views: tree, form",
-    "prefix": "oo_view/inherit"
+    "description": "Inherited view",
+    "prefix": "oo_view/inherit_view"
+  },
+  "view/menuitem": {
+    "prefix": "oo_view/menuitem",
+    "body": [
+      "<menuitem",
+      "\tid=\"${1:model_name}_menu\"",
+      "\tname=\"${2:Human readable name}\"",
+      "\taction=\"${1:model_name}_action${3}\"",
+      "\tparent=\"${4:}_menu${5}\"",
+      "\tsequence=\"${6:10}\"/>${0}"
+    ],
+    "description": "Shortcut menuitem"
   },
   "widget/ace": {
-    "body": ["widget=\"${1:ace}\""],
+    "body": [
+      "widget=\"${1:ace}\""
+    ],
     "description": "widget ace editor",
     "prefix": "oo_widget/ace"
   },
   "widget/boolean_button": {
-    "body": ["widget=\"${1:boolean_button}\""],
+    "body": [
+      "widget=\"${1:boolean_button}\""
+    ],
     "description": "widget boolean_button",
     "prefix": "oo_widget/boolean_button"
   },
   "widget/image": {
-    "body": ["widget=\"${1:image}\""],
+    "body": [
+      "widget=\"${1:image}\""
+    ],
     "description": "widget image",
     "prefix": "oo_widget/image"
   },
   "widget/image1": {
-    "body": ["widget=\"${1:image}\""],
+    "body": [
+      "widget=\"${1:image}\""
+    ],
     "description": "widget image",
     "prefix": "oo_widget/image"
   },
   "widget/many2many": {
-    "body": ["widget=\"${1:many2many}\""],
+    "body": [
+      "widget=\"${1:many2many}\""
+    ],
     "description": "widget many2many",
     "prefix": "oo_widget/many2many"
   },
   "widget/many2many_binary": {
-    "body": ["widget=\"${1:many2many_binary}\""],
+    "body": [
+      "widget=\"${1:many2many_binary}\""
+    ],
     "description": "widget many2many_binary",
     "prefix": "oo_widget/many2many_binary"
   },
   "widget/many2many_checkboxes": {
-    "body": ["widget=\"${1:many2many_checkboxes}\""],
+    "body": [
+      "widget=\"${1:many2many_checkboxes}\""
+    ],
     "description": "widget many2many_checkboxes",
     "prefix": "oo_widget/many2many_checkboxes"
   },
   "widget/many2many_kanban": {
-    "body": ["widget=\"${1:many2many_kanban}\""],
+    "body": [
+      "widget=\"${1:many2many_kanban}\""
+    ],
     "description": "widget many2many_kanban",
     "prefix": "oo_widget/many2many_kanban"
   },
   "widget/many2many_tags": {
-    "body": ["widget=\"${1:many2many_tags}\""],
+    "body": [
+      "widget=\"${1:many2many_tags}\""
+    ],
     "description": "widget many2many_tags",
     "prefix": "oo_widget/many2many_tags"
   },
   "widget/percentpie": {
-    "body": ["widget=\"${1:percentpie}\""],
+    "body": [
+      "widget=\"${1:percentpie}\""
+    ],
     "description": "widget percentpie",
     "prefix": "oo_widget/percentpie"
   },
   "widget/progressbar": {
-    "body": ["widget=\"${1:progressbar}\""],
+    "body": [
+      "widget=\"${1:progressbar}\""
+    ],
     "description": "widget progressbar",
     "prefix": "oo_widget/progressbar"
   },
   "widget/radio": {
-    "body": ["widget=\"${1:radio}\""],
+    "body": [
+      "widget=\"${1:radio}\""
+    ],
     "description": "widget radio",
     "prefix": "oo_widget/radio"
   },
   "widget/selection": {
-    "body": ["widget=\"${1:selection}\""],
+    "body": [
+      "widget=\"${1:selection}\""
+    ],
     "description": "widget selection",
     "prefix": "oo_widget/selection"
   },
   "widget/statinfo": {
-    "body": ["widget=\"${1:statinfo}\""],
+    "body": [
+      "widget=\"${1:statinfo}\""
+    ],
     "description": "widget statinfo",
     "prefix": "oo_widget/statinfo"
   },
   "widget/statusbar": {
-    "body": ["widget=\"${1:statusbar}\""],
+    "body": [
+      "widget=\"${1:statusbar}\""
+    ],
     "description": "widget statusbar",
     "prefix": "oo_widget/statusbar"
   },
   "widget/toggle_button": {
-    "body": ["widget=\"${1:toggle_button}\""],
+    "body": [
+      "widget=\"${1:toggle_button}\""
+    ],
     "description": "widget toggle_button",
     "prefix": "oo_widget/toggle_button"
   },
